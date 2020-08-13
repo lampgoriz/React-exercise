@@ -1,0 +1,17 @@
+.nav{
+    grid-area: n;
+    background-color: brown;
+}
+
+.list{
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #cbbdbd;
+}
+.link:hover{
+    color: #fff;
+    text-decoration: none;
+}
