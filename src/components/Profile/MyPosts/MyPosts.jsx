@@ -1,27 +1,15 @@
 import React from "react";
-import './Profile.css';
+import './MyPosts.module.css';
+import Post from "./Post/Post";
 
-const Profile = () =>{
-    return(<div className="content">
+const MyPosts = () => {
+    return (
         <div>
-            <img className="content__img" src="https://images3.alphacoders.com/828/828894.jpg" alt=""/>
+            My posts
+            <Post message='Hi, how are you?'/>
+            <Post message="It's my first post"/>
         </div>
-        <div>
-            ava + dectription
-        </div>
-        <div>
-            my posts
-            <div>
-                new post
-            </div>
-            <div>
-                post 1
-            </div>
-            <div>
-                post 2
-            </div>
-        </div>
-    </div>)
+    )
 }
 
-export default  Profile;
+export default MyPosts;

@@ -3,15 +3,20 @@
     background-color: brown;
 }
 
-.list{
+.list__item{
     list-style: none;
 }
 
-.link {
+.link{
     text-decoration: none;
     color: #cbbdbd;
 }
+
 .link:hover{
     color: #fff;
     text-decoration: none;
+}
+
+.link.activeLink{
+    color: #fff;
 }

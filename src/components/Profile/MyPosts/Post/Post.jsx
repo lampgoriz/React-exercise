@@ -1,12 +1,15 @@
 import React from "react";
-import style from './MyPost.module.css';
+import style from './Post.module.css';
 
-const MyPost = () =>{
-    return(
+const Post = (props) => {
+    return (
         <div>
-            <img className={style.profile__photo} src="https://vignette.wikia.nocookie.net/discord-wikia/images/5/5e/Default.png/revision/latest/scale-to-width-down/340?cb=20191215094354&path-prefix=ru" alt=""/>
+            <img className={style.profile__photo}
+                 src="https://vignette.wikia.nocookie.net/discord-wikia/images/5/5e/Default.png/revision/latest/scale-to-width-down/340?cb=20191215094354&path-prefix=ru"
+                 alt=""/>
+            {props.message}
         </div>
     )
 }
 
-export default  MyPost;
+export default Post;
