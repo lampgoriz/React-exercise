@@ -1,17 +1,14 @@
 import React from "react";
-import './Profile.css';
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-const Profile = () => {
-    return (<div>
+const Profile = (props) => {
+    return (
         <div>
-            <img className="content__img" src="https://images3.alphacoders.com/828/828894.jpg" alt=""/>
+            <ProfileInfo/>
+            <MyPosts postsArr={props.state.postsArr} addPost={props.addPost}/>
         </div>
-        <div>
-            ava + dectription
-        </div>
-        <MyPosts/>
-    </div>)
+    )
 }
 
 export default Profile;

@@ -1,0 +1,57 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialog__items {
+    padding: 10px;
+}
+
+.dialog__items .active {
+    color: #000000;
+}
+
+.dialog {
+    padding: 10px;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: #817070;
+}
+
+.dialog a:hover {
+    color: #000000;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.message {
+    padding: 10px;
+}
+
+/*#1{
+    display: flex;
+    justify-content: end;
+}
+
+#2{
+    justify-content: start;
+}*/
+
+.messageInput{
+    max-width: 600px;
+    margin: 400px auto 0 auto;
+}
+
+.textarea{
+
+}
+
+.messageButton{
+
+}
