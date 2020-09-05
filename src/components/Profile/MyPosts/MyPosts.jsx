@@ -1,11 +1,11 @@
 import React from "react";
 import style from './MyPosts.module.css';
 import Post from "./Post/Post";
-import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../Redux/state";
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../Redux/Profile-reducer";
 
 const MyPosts = (props) => {
 
-    let postsElement = props.postsArr.map(p => <Post message={p.message} likeCouner={p.likeCounter}/>);
+    let postsElements = props.postsArr.map(p => <Post message={p.message} likeCouner={p.likeCounter}/>);
     let newPostElement = React.createRef();
 
     let addPost = () => {
@@ -30,7 +30,7 @@ const MyPosts = (props) => {
                 </div>
             </div>
             <div className={style.posts__items}>
-                {postsElement}
+                {postsElements}
             </div>
         </div>
     )
