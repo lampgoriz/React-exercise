@@ -6,8 +6,9 @@ import Message from "./Message/Message";
 const Dialogs = (props) => {
     let state = props.dialogsPage;
 
-    let dialogsElements = state.dialogsData.map(d => <DialogItem name={d.name} id={d.id} img={d.img}/>);
-    let messagesElements = state.messagesData.map(m => <Message message={m.message} id={m.id}/>);
+    let dialogsElements = state.dialogsData.map(d => <DialogItem name={d.name} key={d.id} id={d.id} img={d.img}/>);
+    let messagesElements = state.messagesData.map(m => <Message message={m.message} key={m.id} id={m.id}/>);
+    let newMessageText = state.newMessageText;
 
     let onSendMessage = () => {
         props.sendMessage();
@@ -26,7 +27,7 @@ const Dialogs = (props) => {
             <div className={style.message}>
                 {messagesElements}
                 <div className={style.messageInput}>
-                    <textarea onChange={onUpdateMessageText} value={state.newMessageText}
+                    <textarea onChange={onUpdateMessageText} value={newMessageText}
                               className={style.textarea} cols="60" rows="6"></textarea>
                     <button onClick={onSendMessage} className={style.messageButton}>Send</button>
                 </div>
