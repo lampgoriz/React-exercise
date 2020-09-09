@@ -1,7 +1,7 @@
 .nav{
     grid-area: n;
     background-color: rgba(255,228,196,0.15);
-    max-height: 200px;
+    max-height: 300px;
     border-radius: 5px;
 }
 
