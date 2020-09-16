@@ -1,0 +1,22 @@
+.header{
+    grid-area: h;
+    background-color: rgba(255,228,196,0.15);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 40px;
+}
+
+.login a{
+    display: block;
+    color: #817070;
+    text-decoration: none;
+    padding: 15px 10px 0 15px;
+}
+
+.login a:hover{
+    color: #000;
+}
