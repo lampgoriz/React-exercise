@@ -12,7 +12,7 @@ let initialState = {
     ],
     newPostText: 'Meme',
     profile: null,
-    status: 'my status'
+    status: ''
 }
 
 const profileReducer = (state = initialState, action) => {
@@ -55,7 +55,7 @@ const profileReducer = (state = initialState, action) => {
 export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newPostText: text});
 export const addPostActionCreator = () => ({type: ADD_POST});
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
-export const setStatus = (status) => ({type: SET_USER_PROFILE, status});
+export const setStatus = (status) => ({type: SET_STATUS, status});
 
 export const getProfile = (userId) => (dispatch) => {
     profileAPI.getProfile(userId).then(response => {
@@ -72,7 +72,7 @@ export const getStatus = (userId) => (dispatch) => {
 export const updateStatus = (status) => (dispatch) => {
     profileAPI.updateStatus(status).then(response => {
         if (response.data.resultCode === 0){
-            dispatch(setStatus(response.data));
+            dispatch(setStatus(status));
         }
     });
 }
