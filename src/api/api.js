@@ -4,8 +4,8 @@ const instance = axios.create({
     withCredentials: true,
     baseURL: `https://social-network.samuraijs.com/api/1.0/`,
     headers: {
-        // 'API-KEY': 'fa4e8830-2447-4120-b9db-3bcc67a6fe5f' // Lampogriz
-        'API-KEY': '7795886e-f5ca-4c12-8d1a-5a0197a62370' // Mamba
+         'API-KEY': 'fa4e8830-2447-4120-b9db-3bcc67a6fe5f' // Lampogriz
+        //'API-KEY': '7795886e-f5ca-4c12-8d1a-5a0197a62370' // Mamba
     }
 })
 
