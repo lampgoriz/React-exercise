@@ -1,0 +1,16 @@
+.errorBorder input,
+.errorBorder input{
+    border: 2px solid #ff0000;
+    outline: none;
+}
+
+.errorMessage{
+    color: #ff0000;
+}
+
+.formSummaryError{
+    border: 2px solid #ff0000;
+    padding: 3px;
+    color: #ff0000;
+    width: 200px;
+}
