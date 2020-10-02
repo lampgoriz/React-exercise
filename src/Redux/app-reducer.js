@@ -22,15 +22,15 @@ const appReducer = (state = initialState, action) => {
 
 export const initializedSuccess = () => ({type: INITIALIZED_SUCCESS});
 
-export const initializeApp = () => (dispatch) => {
-    authAPI.me().then(response => {
-        if (response.data.resultCode === 0) {
-            let {id, login, email} = response.data.data;
-            dispatch(setAuthUserData(id, login, email, true));
-            dispatch(initializedSuccess());
-            dispatch(getAuthUserData);
-        }
-    });
+export const initializeApp = () => async (dispatch) => {
+    let response = await authAPI.me();
+    if (response.data.resultCode === 0) {
+        let {id, login, email} = response.data.data;
+        dispatch(setAuthUserData(id, login, email, true));
+        dispatch(initializedSuccess());
+        dispatch(getAuthUserData);
+    }
+
 
     // let promise = dispatch(getAuthUserData());
     // Promise. all([promise]).then(() => {
