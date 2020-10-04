@@ -2,7 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import {
     follow, requestUsers,
-    setCurrentPage,
+    setCurrentPage, setPortionPage,
     toggleFollowingProgress,
     unfollow
 } from "../../Redux/Users-reducer";
@@ -12,7 +12,7 @@ import {
     getCurrentPage,
     getFollowingInProgress,
     getIsFetching,
-    getPageSize,
+    getPageSize, getPortionSize,
     getTotalUsersCount, getUsers,
 } from "../../Redux/users-selectors";
 
@@ -30,7 +30,7 @@ class UsersContainer extends React.Component {
         return (
             <>
                 {this.props.isFetching ? <Preloader/> : null}
-                <Users totalUsersCount={this.props.totalUsersCount}
+                <Users totalItemsCount={this.props.totalUsersCount}
                        pageSize={this.props.pageSize}
                        currentPage={this.props.currentPage}
                        follow={this.props.follow}
@@ -38,6 +38,7 @@ class UsersContainer extends React.Component {
                        usersArr={this.props.usersArr}
                        onPageChanged={this.onPageChanged}
                        followingInProgress={this.props.followingInProgress}
+                       portionSize = {this.props.portionSize}
                 />
             </>
         )
@@ -52,6 +53,7 @@ let mapStateToProps = (state) => {
         currentPage: getCurrentPage(state),
         isFetching: getIsFetching(state),
         followingInProgress: getFollowingInProgress(state),
+        portionSize: getPortionSize(state),
     }
 }
 
@@ -60,5 +62,6 @@ export default connect(mapStateToProps, {
     unfollow,
     setCurrentPage,
     toggleFollowingProgress,
-    requestUsers
+    requestUsers,
+    setPortionPage
 })(UsersContainer);

@@ -1,3 +1,9 @@
 .selectedPage{
     font-weight: bold;
 }
+
+.paginator{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
