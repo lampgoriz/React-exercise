@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/React-exercise/static/css/main.d84ed8c0.chunk.css",
+    "main.js": "/React-exercise/static/js/main.21a7eba2.chunk.js",
+    "main.js.map": "/React-exercise/static/js/main.21a7eba2.chunk.js.map",
+    "runtime-main.js": "/React-exercise/static/js/runtime-main.b7b6f19d.js",
+    "runtime-main.js.map": "/React-exercise/static/js/runtime-main.b7b6f19d.js.map",
+    "static/js/2.af723089.chunk.js": "/React-exercise/static/js/2.af723089.chunk.js",
+    "static/js/2.af723089.chunk.js.map": "/React-exercise/static/js/2.af723089.chunk.js.map",
+    "static/css/3.d37c0c22.chunk.css": "/React-exercise/static/css/3.d37c0c22.chunk.css",
+    "static/js/3.43edad8d.chunk.js": "/React-exercise/static/js/3.43edad8d.chunk.js",
+    "static/js/3.43edad8d.chunk.js.map": "/React-exercise/static/js/3.43edad8d.chunk.js.map",
+    "index.html": "/React-exercise/index.html",
+    "precache-manifest.7a767fb376659a740266c702ee9bc9b5.js": "/React-exercise/precache-manifest.7a767fb376659a740266c702ee9bc9b5.js",
+    "service-worker.js": "/React-exercise/service-worker.js",
+    "static/css/3.d37c0c22.chunk.css.map": "/React-exercise/static/css/3.d37c0c22.chunk.css.map",
+    "static/css/main.d84ed8c0.chunk.css.map": "/React-exercise/static/css/main.d84ed8c0.chunk.css.map",
+    "static/js/2.af723089.chunk.js.LICENSE.txt": "/React-exercise/static/js/2.af723089.chunk.js.LICENSE.txt",
+    "static/media/preloader.gif": "/React-exercise/static/media/preloader.1a7925ff.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7b6f19d.js",
+    "static/js/2.af723089.chunk.js",
+    "static/css/main.d84ed8c0.chunk.css",
+    "static/js/main.21a7eba2.chunk.js"
+  ]
+}
