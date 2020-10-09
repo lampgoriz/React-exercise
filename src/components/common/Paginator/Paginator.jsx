@@ -27,7 +27,7 @@ let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portion
                 }}>{p}</span>
             })}
 
-            <button disabled={portionCount < portionNumber} onClick={()=>{setPortionNumber(portionNumber + 1)}}>{'>'}</button>
+            <button disabled={portionCount <= portionNumber} onClick={()=>{setPortionNumber(portionNumber + 1)}}>{'>'}</button>
         </div>
     )
 }

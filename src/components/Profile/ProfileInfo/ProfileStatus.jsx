@@ -27,7 +27,7 @@ const ProfileStatus = (props) => {
         <div>
             <div>
                 {!editMode &&
-                <span onClick={activeEditMode}>{status || '-----'}</span>
+                <span onClick={activeEditMode}><b>Status</b>: {status || '-----'}</span>
                 }
             </div>
             <div>
